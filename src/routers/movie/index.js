@@ -11,12 +11,12 @@ export default {
             component : () => import('@/components/NowPlaying')
         },
         {
-            path : 'search',
-            component : () => import('@/components/Search')
-        },
-        {
             path : 'comingSoon',
             component : () => import('@/components/ComingSoon')
+        },
+        {
+            path : 'search',
+            component : () => import('@/components/Search')
         },
         {
             path : '/movie',
