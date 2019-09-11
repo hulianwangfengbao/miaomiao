@@ -9,7 +9,7 @@
 				<div class="hot_swtich">
 					<router-link tag="div" to="/movie/nowPlaying" class="hot_item">正在热映</router-link>
 					<router-link tag="div" to="/movie/comingSoon" class="hot_item">即将上映</router-link>
-				</div>
+				</div>            
 				<router-link tag="div" to="/movie/search" class="search_entry">
 					<i class="iconfont icon-sousuo"></i>
 				</router-link>
@@ -19,7 +19,7 @@
             </keep-alive>
         </div>
         <TabBar />
-     
+      <router-view name="detail" />
     </div>
 </template>
 
@@ -34,6 +34,8 @@ export default {
    components : {
      Header ,
      TabBar
+
+
    },
    mounted() {
       setTimeout(()=>{
